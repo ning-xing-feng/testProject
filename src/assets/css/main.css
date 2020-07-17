@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+
+.content-box {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-bottom: 30px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin: 10px 0;
+}
+
+.el-table th {
+    background-color: #f5f7fa !important;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}
+
+/*Upload*/
+
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-upload--text em {
+    font-style: normal;
+}
+
+/*VueEditor*/
+
+.ql-container {
+    min-height: 400px;
+}
+
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+/*markdown*/
+
+.v-note-wrapper .v-note-panel {
+    min-height: 500px;
+}
+
+.el-button--primary {
+    background-color: #21b5cc !important;
+    border: 1px solid #21b5cc;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    background-color: #edf3fc !important;
+}
+
+#app {
+    height: 100%;
+}
+
+.el-menu-item.is-active {
+    color: #21b5cc !important;
+    border-left: 5px solid #21b5cc;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.uploadShow .el-upload {
+    display: none;
+}
+
+.wrap {
+    margin: 20px;
+}
+
+.el-button.link {
+    padding: 0px;
+
+    span {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+            padding: 9px 15px;
+        }
+    }
+}
+
+.note-editor.note-frame {
+    width: 650px;
+}
+
+.el-table td,
+.el-table th {
+    text-align: center;
+}
+
+.el-table th>.cell {
+    text-align: center;
+}
+
+.pic {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+.pic img {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.pro-item {
+    margin: 0;
+    border-bottom: 1px solid #dedede;
+    padding: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pro-item:first-child {
+    padding-top: 0;
+}
+
+.pro-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+button.export {
+    padding: 12px 15px !important;
+}
+
+.food-container .main {
+    background-color: #fff;
+}
+
+/**公共**/
+.box {
+    display: -webkit-box;
+    display: flexbox;
+    display: -moz-box;
+    /* 老版本 - 适配iOS 6-, Safari 3.1-6 */
+    display: -webkit-flex;
+    /* 新版本 - 适配Chrome */
+    display: flex;
+}
+
+.box-pack-center {
+    -webkit-box-justify-content: center;
+    -moz-align-justify-content: center;
+    -webkit-align-justify-content: center;
+    justify-content: center;
+}
+
+.box-pack-start {
+    -webkit-box-justify-content: flex-start;
+    -moz-align-justify-content: flex-start;
+    -webkit-align-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.box-pack-end {
+    -webkit-box-justify-content: flex-end;
+    -moz-align-justify-content: flex-end;
+    -webkit-align-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.box-pack-between {
+    -webkit-box-justify-content: space-between;
+    -moz-align-justify-content: space-between;
+    -webkit-align-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.box-pack-around {
+    -webkit-box-justify-content: space-around;
+    -moz-align-justify-content: space-around;
+    -webkit-align-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.box-align-center {
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.box-align-start {
+    -webkit-box-align: flex-start;
+    -moz-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.box-align-end {
+    -webkit-box-align: flex-end;
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.files-upload .el-upload-list {
+    display: block !important;
+}
+
+.contain .header {
+    padding: 16px;
+    background-color: #fff;
+
+}
+.input_modal .input-item .proName {
+    width: 200px;
+}
+
+.input_modal .input-item {
+    float: left;
+    display: flex;
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.input_modal {
+    padding: 16px 16px 10px 16px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+.table-content {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pagination {
+    text-align: right;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    display: block !important;
+}
+
+.el-button {
+    background-color: #21b5cc;
+    border: 1px solid #21b5cc;
+}
+
+.camera_contain .el-button--primary {
+    background-color: #21b5cc !important;
+    border: 1px solid #21b5cc;
+}
+
+.camera_contain .main {
+    margin-top: 20px;
+    clear: both;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.camera_contain .main .el-input,
+.el-select {
+    width: 200px;
+}
+
+.camera_contain .main .el-form-item {
+    margin-bottom: 22px;
+    width: 31%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.camera_contain .main .el-form-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.camera_contain .main .el-form-item:last-child {
+    width: 100%;
+    display: block;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #21b5cc !important;
+    border-color: #21b5cc !important;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #21b5cc !important;
+}
+
+.header .el-button {
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.el-table .cell {
+    text-align: center;
+}
+
+.el-image-viewer__close {
+    top: 90px !important;
+}
+/* 公用的图片上传 */
+.el-dialog__header {
+    background-color: #21b5cc !important;
+    color: #fff;
+}
+.el-input .el-input--mini .el-input--suffix {
+    width: 210px !important;
+}
+.el-input__inner {
+    width: 210px !important;
+    min-width: 130px;
+}
+.contain .input_modal {
+    margin-top: 0;
+}
+.el-form-item__content {
+    display: flex;
+    /* // flex-wrap: wrap; */
+}
+
+.el-dialog__title {
+    color: #fff;
+}
+.el-dialog__headerbtn .el-dialog__close {
+    color: #fff;
+}
+.el-textarea__inner {
+    width: 50% !important;
+}
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 180px;
+  line-height: 180px;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409eff;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+}
+.main{
+    background-color: #fff;
+    padding: 15px;
+}
+.top{
+    background-color: #fff;
+    padding:15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.input_modal{
+    margin-bottom: 10px;
+}
